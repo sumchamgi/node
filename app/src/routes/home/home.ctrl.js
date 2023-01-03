@@ -13,14 +13,14 @@ const output ={
 
 const users = {
     id:["ctd0606", "김개발" ,"최개발"],
-    password :["1234" , "1234" , "123456"]
+    password :["1234" , "1234" , "123456"],
 }
 
 const process ={
-    login : (req,ree) =>{
+    login : (req,res) =>{
         const id = req.body.id,
         password =req.body.password
-        console.log(id, password)
+        /* console.log(id, password) */
 
         if(users.id.includes(id)){
             const idx = users.id.indexOf(id);
