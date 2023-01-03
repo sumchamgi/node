@@ -13,7 +13,7 @@ function login(){
     }
     
     
-    fetch("/login",{
+    fetch("/login",{//패치사용
         method : "POST",
         headers:{
             "Content-Type": "application/json",
