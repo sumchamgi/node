@@ -13,11 +13,13 @@ function login(){
     }
     
     
-    fetch("/login",{//패치사용
+    fetch("/login",{
         method : "POST",
         headers:{
             "Content-Type": "application/json",
         },
-        body: JSON.stringify(req)
+        body: JSON.stringify(req),
     })
+    .then((res) => res.json())
+    .then((res) => console.log(res))
 }
